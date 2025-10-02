@@ -1,0 +1,26 @@
+const readline = require("readline");
+
+
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
+num=-1
+const numR = (Math.floor(Math.random() * 100))
+while(num != numR){
+  if(numR>num){
+  console.log(`O número aleatório é maior`)
+    } else{
+    console.log('O número aleatório é')
+    }
+rl.question("Digite o primeiro número: ", (num) => {
+  
+  
+
+})
+  num = Number(num)
+}
+
+console.log('Acertou!')
+
+rl.close();
